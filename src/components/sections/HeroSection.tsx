@@ -18,14 +18,19 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 cursor-pointer transition-all duration-300 shadow-lg shadow-emerald-500/20 relative group" style={{background: 'linear-gradient(90deg, #10b981, #16a34a)'}}>
-            <Icon name="Bot" size={16} />
-            ИИ-технологии для бизнеса
-            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 text-lg hover-scale relative group shadow-lg shadow-emerald-500/20 mb-6"
+          >
+            <span className="flex items-center">
+              <Icon name="Bot" size={18} className="mr-2" />
+              ИИ-технологии для бизнеса
+            </span>
+            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
               Канал с полезными материалами
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-3 border-r-3 border-t-3 border-transparent border-t-gray-900"></div>
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
             </div>
-          </div>
+          </Button>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             ИИ-продавец 24/7 — заявки на автопилоте
