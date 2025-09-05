@@ -50,9 +50,8 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             </Button>
             
             <Button 
-              variant="outline" 
               size="lg" 
-              className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-4 text-lg hover-scale"
+              className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 text-lg hover-scale relative group shadow-lg shadow-emerald-500/20"
               onClick={() => {
                 const demoSection = document.querySelector('[data-section="demo"]');
                 if (demoSection) {
@@ -60,8 +59,14 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                 }
               }}
             >
-              <Icon name="PlayCircle" size={20} className="mr-2" />
-              Посмотреть демо
+              <span className="flex items-center">
+                <span className="mr-2">▶</span>
+                Вживую: как работает бот
+              </span>
+              <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                Открыть демо
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
+              </div>
             </Button>
           </div>
         </div>
