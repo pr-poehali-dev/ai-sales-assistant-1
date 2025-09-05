@@ -22,6 +22,8 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             size="lg" 
             className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 text-lg hover-scale relative group shadow-lg shadow-emerald-500/20 mb-6"
             style={{background: 'linear-gradient(90deg, #059669, #0891b2)', padding: '16px 32px', fontSize: '18px'}}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #065f46, #047857)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #059669, #0891b2)'}
           >
             <span className="flex items-center">
               <Icon name="Bot" size={18} className="mr-2" />
