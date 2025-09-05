@@ -24,15 +24,15 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            ИИ-продавец 24/7 — заявки без менеджеров
+            ИИ-продавец 24/7 — заявки на автопилоте
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto">
-            Получайте заявки 24/7 без менеджеров
+            Продаёт, отвечает и консультирует вместо менеджеров
           </h2>
           
-          <h3 className="text-lg md:text-xl text-blue-300 mb-12 max-w-3xl mx-auto font-medium">
-            ИИ-продавец под ключ. Настроим за 3 дня без кода.
+          <h3 className="text-lg md:text-xl text-blue-300 mb-12 max-w-3xl mx-auto font-medium flex items-center justify-center gap-2">
+            <span>👉</span> Настроим за 3 дня. Без кода, без головной боли.
           </h3>
           
           <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
