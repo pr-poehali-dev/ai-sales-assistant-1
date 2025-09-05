@@ -20,8 +20,14 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
         <div className="text-center animate-fade-in">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 text-lg hover-scale relative group shadow-lg shadow-emerald-500/20 mb-6"
-            style={{background: 'linear-gradient(90deg, #10b981, #14b8a6)', padding: '16px 32px', fontSize: '18px'}}
+            className="text-white px-8 py-4 text-lg hover-scale relative group mb-6"
+            style={{
+              background: 'linear-gradient(90deg, #10b981, #14b8a6)',
+              padding: '16px 32px', 
+              fontSize: '18px',
+              boxShadow: '0 10px 25px rgba(16, 185, 129, 0.2)',
+              border: 'none'
+            }}
             onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #065f46, #047857)'}
             onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #10b981, #14b8a6)'}
           >
