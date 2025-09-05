@@ -8,10 +8,10 @@ import { Label } from '@/components/ui/label';
 import { useEffect, useState, useRef } from 'react';
 
 const Index = () => {
-  const [isVisible, setIsVisible] = useState({});
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
-  const [errors, setErrors] = useState({});
-  const sectionRefs = useRef([]);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   // Intersection Observer для анимаций при скролле
   useEffect(() => {
@@ -37,7 +37,7 @@ const Index = () => {
   }, []);
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: Record<string, string> = {};
     if (!formData.name.trim()) newErrors.name = 'Имя обязательно';
     if (!formData.phone.trim()) {
       newErrors.phone = 'Телефон обязательный';
@@ -52,7 +52,7 @@ const Index = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
       // Создаём ссылку для Telegram с данными формы
@@ -65,7 +65,12 @@ const Index = () => {
     }
   };
 
-  const DemoModal = ({ title, botName, description, features }) => (
+  const DemoModal = ({ title, botName, description, features }: {
+    title: string;
+    botName: string;
+    description: string;
+    features: string[];
+  }) => (
     <DialogContent className="max-w-2xl bg-gray-900 border-gray-700">
       <DialogHeader>
         <DialogTitle className="text-2xl text-white">{title}</DialogTitle>
@@ -207,7 +212,12 @@ const Index = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-4 text-lg hover-scale"
-                onClick={() => document.querySelector('[data-section="demo"]')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  const demoSection = document.querySelector('[data-section="demo"]');
+                  if (demoSection) {
+                    demoSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 <Icon name="PlayCircle" size={20} className="mr-2" />
                 Посмотреть демо
