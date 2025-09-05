@@ -39,9 +39,14 @@ const Index = () => {
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = 'Имя обязательно';
-    if (!formData.phone.trim()) newErrors.phone = 'Телефон обязательный';
-    if (formData.phone && !/^[+7-8]?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/.test(formData.phone)) {
-      newErrors.phone = 'Неверный формат телефона';
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Телефон обязательный';
+    } else {
+      // Простая проверка: должен содержать минимум 10 цифр
+      const phoneDigits = formData.phone.replace(/\D/g, '');
+      if (phoneDigits.length < 10) {
+        newErrors.phone = 'Телефон должен содержать минимум 10 цифр';
+      }
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -455,7 +460,7 @@ const Index = () => {
                         if (errors.phone) setErrors(prev => ({ ...prev, phone: '' }));
                       }}
                       className="bg-gray-700 border-gray-600 text-white focus:border-blue-500"
-                      placeholder="+7 (999) 123-45-67"
+                      placeholder="+7 999 123 45 67 или 8 999 123 45 67"
                     />
                     {errors.phone && <p className="text-red-400 text-sm mt-1">{errors.phone}</p>}
                   </div>
