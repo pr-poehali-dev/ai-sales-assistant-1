@@ -60,8 +60,8 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
               }}
             >
               <span className="flex items-center">
-                <Icon name="Play" size={18} className="mr-2" />
-                Вживую: как работает бот
+                <span className="mr-2">🔍</span>
+                Посмотреть демо-бота
               </span>
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
                 Открыть демо
