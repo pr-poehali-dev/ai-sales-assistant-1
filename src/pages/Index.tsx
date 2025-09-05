@@ -519,7 +519,7 @@ const Index = () => {
                     variant="outline" 
                     size="lg" 
                     className="w-full lg:w-auto border-gray-600 text-gray-300 hover:bg-gray-800 hover-scale"
-                    onClick={() => alert('Ссылка на канал будет добавлена после создания канала')}
+                    onClick={() => window.open('https://t.me/iidlyabiz', '_blank')}
                   >
                     <Icon name="Users" size={20} className="mr-2" />
                     Канал: ИИ для бизнеса
