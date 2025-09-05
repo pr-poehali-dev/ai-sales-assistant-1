@@ -18,7 +18,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 cursor-pointer transition-all duration-300 shadow-lg shadow-emerald-500/20 relative group">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 cursor-pointer transition-all duration-300 shadow-lg shadow-emerald-500/20 relative group" style={{background: 'linear-gradient(90deg, #10b981, #16a34a)'}}>
             <Icon name="Bot" size={16} />
             ИИ-технологии для бизнеса
             <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
