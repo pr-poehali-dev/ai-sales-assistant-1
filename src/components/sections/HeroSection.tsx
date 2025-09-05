@@ -36,7 +36,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
           </h3>
           
           <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-            Он не спит, не болеет и всегда на связи. Отвечает на заявки, консультирует клиентов и продаёт — пока вы занимаетесь делом.
+            Он не уходит на больничный и не теряет клиентов. Отвечает на заявки, консультирует клиентов и продаёт — пока вы занимаетесь делом.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
