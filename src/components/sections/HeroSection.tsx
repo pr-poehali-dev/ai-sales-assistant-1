@@ -27,11 +27,11 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             ИИ-продавец 24/7 — заявки без менеджеров
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-gray-300 mb-6 max-w-4xl mx-auto">
+          <h2 className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto">
             Получайте заявки 24/7 без менеджеров
           </h2>
           
-          <h3 className="text-lg md:text-xl text-blue-300 mb-8 max-w-3xl mx-auto font-medium">
+          <h3 className="text-lg md:text-xl text-blue-300 mb-12 max-w-3xl mx-auto font-medium">
             ИИ-продавец под ключ. Настроим за 3 дня без кода.
           </h3>
           
