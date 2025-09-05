@@ -50,8 +50,12 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Здесь будет отправка формы
-      alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+      // Создаём ссылку для Telegram с данными формы
+      const telegramMessage = `Новая заявка на ИИ-ассистента!\n\nИмя: ${formData.name}\nТелефон: ${formData.phone}${formData.message ? `\nСообщение: ${formData.message}` : ''}`;
+      const telegramUrl = `https://t.me/cocozzAAA?text=${encodeURIComponent(telegramMessage)}`;
+      
+      window.open(telegramUrl, '_blank');
+      alert('Спасибо! Ваша заявка отправляется в Telegram.');
       setFormData({ name: '', phone: '', message: '' });
     }
   };
@@ -95,13 +99,16 @@ const Index = () => {
               <div className="text-white">Привет! Расскажите о ваших услугах</div>
             </div>
             <div className="bg-blue-900/50 p-3 rounded-lg">
-              <div className="text-blue-300 text-xs mb-1">{botName}:</div>
+              <div className="text-blue-300 text-xs mb-1">@{botName}:</div>
               <div className="text-white">Здравствуйте! 👋 Рад вас видеть! Я помогу вам с выбором наших услуг. У нас есть несколько популярных направлений...</div>
             </div>
           </div>
         </div>
         
-        <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+        <Button 
+          className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+          onClick={() => window.open(`https://t.me/${botName}`, '_blank')}
+        >
           <Icon name="ExternalLink" size={16} className="mr-2" />
           Перейти к боту в Telegram
         </Button>
@@ -182,12 +189,21 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover-scale">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover-scale"
+                onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+              >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Заказать ИИ-ассистента
               </Button>
               
-              <Button variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-4 text-lg hover-scale">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-4 text-lg hover-scale"
+                onClick={() => document.querySelector('[data-section="demo"]')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Icon name="PlayCircle" size={20} className="mr-2" />
                 Посмотреть демо
               </Button>
@@ -337,7 +353,7 @@ const Index = () => {
               </DialogTrigger>
               <DemoModal 
                 title="Бот для прогрева @pluchki_bot"
-                botName="Плючкибот"
+                botName="pluchki_bot"
                 description="Прогревает подписчиков, рассказывает о пользе услуг и подготавливает к покупке"
                 features={[
                   "Отвечает на частые вопросы о услугах",
@@ -369,7 +385,7 @@ const Index = () => {
               </DialogTrigger>
               <DemoModal 
                 title="Бот для продаж @pocovorimzzzz_bot"
-                botName="Поговоримбот"
+                botName="pocovorimzzzz_bot"
                 description="Продаёт услуги, обрабатывает заявки и закрывает сделки"
                 features={[
                   "Проводит полную консультацию",
@@ -475,12 +491,21 @@ const Index = () => {
                 </h3>
                 
                 <div className="space-y-4">
-                  <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale">
+                  <Button 
+                    size="lg" 
+                    className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale"
+                    onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+                  >
                     <Icon name="Send" size={20} className="mr-2" />
                     Telegram: @cocozzAAA
                   </Button>
                   
-                  <Button variant="outline" size="lg" className="w-full lg:w-auto border-gray-600 text-gray-300 hover:bg-gray-800 hover-scale">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="w-full lg:w-auto border-gray-600 text-gray-300 hover:bg-gray-800 hover-scale"
+                    onClick={() => alert('Ссылка на канал будет добавлена после создания канала')}
+                  >
                     <Icon name="Users" size={20} className="mr-2" />
                     Канал: ИИ для бизнеса
                   </Button>
