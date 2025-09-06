@@ -12,3 +12,14 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://bot24.pro/sitemap.xml
+
+# Дополнительные директивы для SEO
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+
+# Crawler optimization
+Crawl-delay: 1

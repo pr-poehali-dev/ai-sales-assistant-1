@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/sections/HeroSection';
 import BenefitsSection from '@/components/sections/BenefitsSection';
 import DemoSection from '@/components/sections/DemoSection';
@@ -36,27 +37,36 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <HeroSection 
-        isVisible={isVisible.hero || false}
-        sectionRef={setSectionRef(0)}
-      />
+    <>
+      <Helmet>
+        <title>ИИ Помощник по Продажам — Автоматизация Бизнеса 24/7</title>
+        <meta name="description" content="Умный ИИ-помощник автоматизирует ваши продажи, обрабатывает заявки клиентов и увеличивает прибыль. Работает круглосуточно без выходных." />
+        <meta name="keywords" content="ИИ помощник, автоматизация продаж, чат-бот для бизнеса, искусственный интеллект, продажи 24/7, автоматизация заявок, увеличение конверсии" />
+        <link rel="canonical" href="https://bot24.pro" />
+      </Helmet>
       
-      <BenefitsSection 
-        isVisible={isVisible.benefits || false}
-        sectionRef={setSectionRef(1)}
-      />
-      
-      <DemoSection 
-        isVisible={isVisible.demo || false}
-        sectionRef={setSectionRef(4)}
-      />
-      
-      <ContactSection 
-        isVisible={isVisible.contact || false}
-        sectionRef={setSectionRef(5)}
-      />
-    </div>
+      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900" role="main">
+        <HeroSection 
+          isVisible={isVisible.hero || false}
+          sectionRef={setSectionRef(0)}
+        />
+        
+        <BenefitsSection 
+          isVisible={isVisible.benefits || false}
+          sectionRef={setSectionRef(1)}
+        />
+        
+        <DemoSection 
+          isVisible={isVisible.demo || false}
+          sectionRef={setSectionRef(4)}
+        />
+        
+        <ContactSection 
+          isVisible={isVisible.contact || false}
+          sectionRef={setSectionRef(5)}
+        />
+      </main>
+    </>
   );
 };
 
