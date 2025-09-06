@@ -78,8 +78,8 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
+      <div className="container max-w-4xl px-2 ml-0 mr-auto">
+        <h2 className="text-4xl font-bold text-left text-white mb-16">
           Примеры чат-ботов
         </h2>
         

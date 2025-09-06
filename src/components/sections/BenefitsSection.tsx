@@ -60,8 +60,8 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <div className="container max-w-6xl px-2 ml-0 mr-auto">
+          <h2 className="text-4xl font-bold text-left text-white mb-16">
             Преимущества ИИ-ассистента
           </h2>
           
@@ -97,8 +97,8 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
 
       {/* Target Audience Section */}
       <section className="py-20 px-4 transition-all duration-1000 delay-300">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <div className="container max-w-4xl px-2 ml-0 mr-auto">
+          <h2 className="text-4xl font-bold text-left text-white mb-16">
             Для кого это подходит
           </h2>
           
@@ -123,8 +123,8 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
 
       {/* What You Get Section */}
       <section className="py-20 px-4 bg-gray-900/50 transition-all duration-1000 delay-400">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <div className="container max-w-4xl px-2 ml-0 mr-auto">
+          <h2 className="text-4xl font-bold text-left text-white mb-16">
             Что вы получите
           </h2>
           
