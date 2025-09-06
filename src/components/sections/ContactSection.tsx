@@ -55,9 +55,9 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl text-3xl font-bold text-white mb-8" style={{wordBreak: 'keep-all'}}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 px-2" style={{wordBreak: 'keep-all'}}>
             Готовы автоматизировать продажи?
           </h2>
           
