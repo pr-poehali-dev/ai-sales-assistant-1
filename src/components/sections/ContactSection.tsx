@@ -55,7 +55,7 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="container max-w-4xl px-4 ml-4 mr-auto">
+      <div className="container max-w-4xl px-2 ml-0 mr-auto">
         <div className="text-left mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 px-2" style={{lineHeight: '1.2'}}>
             Готовы автоматизировать<br className="sm:hidden" /> продажи?
