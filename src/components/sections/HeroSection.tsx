@@ -16,8 +16,8 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
       }`}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
-      <div className="container max-w-6xl px-2 ml-0 mr-auto relative z-10">
-        <div className="text-left animate-fade-in">
+      <div className="container mx-auto max-w-6xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto relative z-10">
+        <div className="text-left sm:text-center animate-fade-in">
           <Button 
             size="lg" 
             className="text-white px-8 py-4 text-lg hover-scale relative group mb-6"
@@ -57,7 +57,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             Он не уходит на больничный и не теряет клиентов. Отвечает на заявки, консультирует клиентов и продаёт — пока вы занимаетесь делом.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-start mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center mb-16">
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover-scale"
