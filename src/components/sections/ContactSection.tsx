@@ -57,8 +57,8 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
     >
       <div className="container mx-auto max-w-4xl px-4">
         <div className="text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 px-2" style={{wordBreak: 'keep-all'}}>
-            Готовы автоматизировать продажи?
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 px-2" style={{lineHeight: '1.2'}}>
+            Готовы автоматизировать<br className="sm:hidden" /> продажи?
           </h2>
           
           <p className="text-xl text-gray-300 mb-12">
