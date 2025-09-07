@@ -42,6 +42,7 @@ const Index = () => {
         <title>ИИ Помощник по Продажам — Автоматизация Бизнеса 24/7</title>
         <meta name="description" content="Умный ИИ-помощник автоматизирует ваши продажи, обрабатывает заявки клиентов и увеличивает прибыль. Работает круглосуточно без выходных." />
         <meta name="keywords" content="ИИ помощник, автоматизация продаж, чат-бот для бизнеса, искусственный интеллект, продажи 24/7, автоматизация заявок, увеличение конверсии" />
+        <meta name="google-site-verification" content="5eObebGJ9Cukhw3_Gcm0xPet-eK4OWpxS7yVW8QFG5Q" />
         <link rel="canonical" href="https://bot24.pro" />
       </Helmet>
       
