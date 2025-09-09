@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/sections/HeroSection';
 import BenefitsSection from '@/components/sections/BenefitsSection';
+import TrustSection from '@/components/sections/TrustSection';
 import DemoSection from '@/components/sections/DemoSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/sections/Footer';
@@ -58,14 +59,19 @@ const Index = () => {
           sectionRef={setSectionRef(1)}
         />
         
+        <TrustSection 
+          isVisible={isVisible.trust || false}
+          sectionRef={setSectionRef(2)}
+        />
+        
         <DemoSection 
           isVisible={isVisible.demo || false}
-          sectionRef={setSectionRef(4)}
+          sectionRef={setSectionRef(3)}
         />
         
         <ContactSection 
           isVisible={isVisible.contact || false}
-          sectionRef={setSectionRef(5)}
+          sectionRef={setSectionRef(4)}
         />
       </main>
       <Footer />
