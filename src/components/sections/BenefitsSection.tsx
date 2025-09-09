@@ -31,7 +31,7 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
     {
       icon: "Settings",
       title: "Настраивается под ваш бизнес",
-      description: "За 1–2 дня"
+      description: "От трёх дней"
     }
   ];
 
