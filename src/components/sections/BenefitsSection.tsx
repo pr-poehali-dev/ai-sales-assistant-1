@@ -30,7 +30,7 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
     },
     {
       icon: "Sparkles",
-      title: "Умная адаптация к студентам",
+      title: "Умная адаптация к клиентам",
       description: "Обучается на ваших данных и становится экспертом в вашей области"
     }
   ];
