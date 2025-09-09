@@ -29,9 +29,9 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
       description: "Даже когда вы офлайн"
     },
     {
-      icon: "Settings",
-      title: "Настраивается под ваш бизнес",
-      description: "Быстро и просто"
+      icon: "Sparkles",
+      title: "Умная адаптация к клиентам",
+      description: "Обучается на ваших данных и становится экспертом в вашей области"
     }
   ];
 
