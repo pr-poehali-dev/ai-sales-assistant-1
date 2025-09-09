@@ -4,6 +4,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import BenefitsSection from '@/components/sections/BenefitsSection';
 import DemoSection from '@/components/sections/DemoSection';
 import ContactSection from '@/components/sections/ContactSection';
+import Footer from '@/components/sections/Footer';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
@@ -67,6 +68,7 @@ const Index = () => {
           sectionRef={setSectionRef(5)}
         />
       </main>
+      <Footer />
     </>
   );
 };
