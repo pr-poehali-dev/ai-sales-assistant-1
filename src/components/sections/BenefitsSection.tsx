@@ -65,7 +65,7 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
               Преимущества ИИ-ассистента
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ваш цифровой продавец, который никогда не спит и не берет отпуск
+              Ваш цифровой ассистент, который никогда не спит и не берет отпуск
             </p>
           </div>
           
