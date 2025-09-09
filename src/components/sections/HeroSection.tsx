@@ -99,10 +99,10 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-6 py-3 text-base hover-scale shadow-lg shadow-purple-500/20"
-                    onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+                    onClick={() => window.open('https://t.me/pocovorimzzzz_bot', '_blank')}
                   >
                     <Icon name="MessageCircle" size={18} className="mr-2" />
-                    Получить консультацию
+                    Протестировать бота-продавца
                   </Button>
                 </div>
               </div>
@@ -146,10 +146,10 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover-scale shadow-lg shadow-blue-500/25"
-                onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+                onClick={() => window.open('https://t.me/pocovorimzzzz_bot', '_blank')}
               >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
-                🔥 Заказать ИИ-ассистента прямо сейчас
+                🔥 Протестировать бота-продавца
               </Button>
               
               <Button 

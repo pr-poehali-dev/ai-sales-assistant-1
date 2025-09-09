@@ -43,7 +43,7 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
 Имя: ${formData.name}
 Телефон: ${formData.phone}${formData.message ? `
 Сообщение: ${formData.message}` : ''}`;
-      const telegramUrl = `https://t.me/cocozzAAA?text=${encodeURIComponent(telegramMessage)}`;
+      const telegramUrl = `https://t.me/pocovorimzzzz_bot?text=${encodeURIComponent(telegramMessage)}`;
       
       window.open(telegramUrl, '_blank');
       alert('Спасибо! Ваша заявка отправляется в Telegram.');
@@ -163,10 +163,10 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
                 <Button 
                   size="lg" 
                   className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale shadow-lg"
-                  onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+                  onClick={() => window.open('https://t.me/pocovorimzzzz_bot', '_blank')}
                 >
                   <Icon name="MessageCircle" size={20} className="mr-2" />
-                  📞 Написать в Telegram
+                  🔥 Протестировать бота-продавца
                 </Button>
                 
                 <Button 
