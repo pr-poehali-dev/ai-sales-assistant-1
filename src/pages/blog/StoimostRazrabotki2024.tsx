@@ -7,10 +7,10 @@ const StoimostRazrabotki2024 = () => {
   return (
     <>
       <Helmet>
-        <title>Сколько стоит разработка чат-бота для малого бизнеса в 2024 году | Bot24.pro</title>
+        <title>Сколько стоит разработка чат-бота для малого бизнеса в 2025 году | Bot24.pro</title>
         <meta name="description" content="Полный разбор цен на разработку чат-ботов: от простых до сложных решений. Что влияет на стоимость и как сэкономить." />
-        <meta name="keywords" content="стоимость чат-бота, цена разработки, чат-бот для бизнеса, разработка ботов 2024" />
-        <link rel="canonical" href="https://bot24.pro/blog/stoimost-razrabotki-chatbota-2024" />
+        <meta name="keywords" content="стоимость чат-бота, цена разработки, чат-бот для бизнеса, разработка ботов 2025" />
+        <link rel="canonical" href="https://bot24.pro/blog/stoimost-razrabotki-chatbota-2025" />
       </Helmet>
       
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -44,7 +44,7 @@ const StoimostRazrabotki2024 = () => {
 
             {/* Заголовок */}
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Сколько стоит разработка чат-бота для малого бизнеса в 2024 году
+              Сколько стоит разработка чат-бота для малого бизнеса в 2025 году
             </h1>
 
             {/* Вводный текст */}

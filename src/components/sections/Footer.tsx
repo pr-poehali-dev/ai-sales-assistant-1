@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  to="/blog/stoimost-razrabotki-chatbota-2024" 
+                  to="/blog/stoimost-razrabotki-chatbota-2025" 
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Стоимость разработки

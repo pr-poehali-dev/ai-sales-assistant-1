@@ -190,7 +190,7 @@ const ChatbotKonversiyaProdazhi = () => {
               
               <div className="flex space-x-4">
                 <Link 
-                  to="/blog/stoimost-razrabotki-chatbota-2024"
+                  to="/blog/stoimost-razrabotki-chatbota-2025"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Следующая статья →

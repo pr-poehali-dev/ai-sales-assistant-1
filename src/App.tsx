@@ -30,7 +30,7 @@ const App = () => (
             <Route path="/terms" element={<Terms />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/chatbot-konversiya-prodazhi" element={<ChatbotKonversiyaProdazhi />} />
-            <Route path="/blog/stoimost-razrabotki-chatbota-2024" element={<StoimostRazrabotki2024 />} />
+            <Route path="/blog/stoimost-razrabotki-chatbota-2025" element={<StoimostRazrabotki2024 />} />
             <Route path="/blog/ii-assistent-dlya-nishi" element={<IIAssistentDlyaNishi />} />
             <Route path="/sitemap.xml" element={<Sitemap />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
