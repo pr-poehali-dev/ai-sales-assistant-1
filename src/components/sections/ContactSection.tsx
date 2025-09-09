@@ -57,12 +57,22 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
     >
       <div className="container max-w-4xl px-2 md:px-4 ml-0 md:mx-auto mr-auto">
         <div className="text-left sm:text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 px-2" style={{lineHeight: '1.2'}}>
-            Готовы автоматизировать<br className="sm:hidden" /> продажи?
+          <div className="mb-6">
+            <span className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4">
+              ⚡ Ограниченное предложение
+            </span>
+          </div>
+          
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-2" style={{lineHeight: '1.2'}}>
+            Готовы автоматизировать<br className="sm:hidden" /> продажи с ИИ?
           </h2>
           
-          <p className="text-xl text-gray-300 mb-12">
-            Свяжитесь с нами и получите персональную консультацию
+          <p className="text-xl text-gray-300 mb-4">
+            Получите бесплатную консультацию и расчет стоимости
+          </p>
+          
+          <p className="text-lg text-emerald-300 font-semibold">
+            🎁 Первые 10 клиентов получают скидку 50% до 31 декабря
           </p>
         </div>
 
@@ -70,9 +80,14 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
           {/* Contact Form */}
           <Card className="bg-gray-800/50 border-gray-700">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                Оставьте заявку
-              </h3>
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  🚀 Получить ИИ-ассистента
+                </h3>
+                <p className="text-gray-400">
+                  Ответим в течение 30 минут
+                </p>
+              </div>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -121,10 +136,10 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 text-lg hover-scale"
+                  className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white py-4 text-lg font-bold hover-scale shadow-lg shadow-orange-500/25 animate-pulse"
                 >
                   <Icon name="Send" size={20} className="mr-2" />
-                  Отправить заявку
+                  🔥 Получить скидку 50% ПРЯМО СЕЙЧАС!
                 </Button>
               </form>
             </CardContent>
@@ -133,18 +148,21 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="text-left sm:text-center lg:text-left">
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Свяжитесь с нами
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Или свяжитесь напрямую
               </h3>
+              <p className="text-gray-400 mb-6">
+                Ответим на все вопросы в Telegram
+              </p>
               
               <div className="space-y-4">
                 <Button 
                   size="lg" 
-                  className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale"
+                  className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale shadow-lg"
                   onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
                 >
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Telegram: @cocozzAAA
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  📞 Написать в Telegram
                 </Button>
                 
                 <Button 
@@ -160,22 +178,28 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
             </div>
             
             <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
-              <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                <Icon name="Gift" size={20} className="text-pink-400" />
-                Бонусы при заказе:
-              </h3>
-              <div className="text-gray-300 space-y-3">
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
-                  <span>Бесплатный аудит вашей воронки</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
-                  <span>3 шаблона под разные ниши</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
-                  <span>Персональная настройка под вашу нишу</span>
+              <div>
+                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                  <Icon name="Gift" size={20} className="text-pink-400" />
+                  Что вы получаете БЕСПЛАТНО:
+                </h3>
+                <div className="text-gray-300 space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
+                    <span>Полный аудит вашей воронки продаж</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
+                    <span>Готовые шаблоны диалогов (стоимость 15 000 ₽)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="CheckCircle" size={16} className="text-emerald-400 mt-1 flex-shrink-0" />
+                    <span>Консультация по настройке (стоимость 10 000 ₽)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Star" size={16} className="text-yellow-400 mt-1 flex-shrink-0" />
+                    <span className="font-semibold text-yellow-300">Общая стоимость бонусов: 25 000 ₽</span>
+                  </div>
                 </div>
               </div>
             </div>

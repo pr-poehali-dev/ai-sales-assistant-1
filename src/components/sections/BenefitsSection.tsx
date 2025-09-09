@@ -61,9 +61,14 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
         }`}
       >
         <div className="container mx-auto max-w-6xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto">
-          <h2 className="text-4xl font-bold text-left sm:text-center text-white mb-16">
-            Преимущества ИИ-ассистента
-          </h2>
+          <div className="text-left sm:text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Преимущества ИИ-ассистента
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Ваш цифровой продавец, который никогда не спит и не берет отпуск
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
@@ -98,9 +103,14 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
       {/* Target Audience Section */}
       <section className="py-20 px-4 transition-all duration-1000 delay-300">
         <div className="container mx-auto max-w-4xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto">
-          <h2 className="text-4xl font-bold text-left sm:text-center text-white mb-16">
-            Для кого это подходит
-          </h2>
+          <div className="text-left sm:text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Для кого это подходит
+            </h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Идеально подходит для малого и среднего бизнеса
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-6">
             {businesses.map((business, index) => (
@@ -124,9 +134,14 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
       {/* What You Get Section */}
       <section className="py-20 px-4 bg-gray-900/50 transition-all duration-1000 delay-400">
         <div className="container mx-auto max-w-4xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto">
-          <h2 className="text-4xl font-bold text-left sm:text-center text-white mb-16">
-            Что вы получите
-          </h2>
+          <div className="text-left sm:text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Что вы получите
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Полный комплект для автоматизации продаж в вашем бизнесе
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-6">
             {bonuses.map((bonus, index) => (
