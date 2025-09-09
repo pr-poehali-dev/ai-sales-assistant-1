@@ -60,9 +60,24 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                   <Icon name="Bot" size={24} className="mr-3 text-blue-400" />
                   Что такое Bot24.pro?
                 </h2>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
                   Это сервис внедрения умных ИИ-ассистентов для бизнеса. Наш AI-бот отвечает на вопросы клиентов, консультирует по услугам, обрабатывает входящие заявки и превращает их в продажи по готовому сценарию.
                 </p>
+                <div className="flex justify-center">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-6 py-3 text-base hover-scale shadow-lg shadow-emerald-500/20"
+                    onClick={() => {
+                      const demoSection = document.querySelector('[data-section="demo"]');
+                      if (demoSection) {
+                        demoSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    <Icon name="Play" size={18} className="mr-2" />
+                    Посмотреть примеры ботов
+                  </Button>
+                </div>
               </div>
 
               <div>
@@ -70,7 +85,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                   <Icon name="ArrowRight" size={20} className="mr-3 text-purple-400" />
                   Как происходит работа?
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6">
                   <div className="flex items-center text-blue-300">
                     <span className="text-2xl mr-3">📋</span>
                     <span>Вы оставляете заявку → мы анализируем ваш бизнес</span>
@@ -80,6 +95,16 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                     <span>Создаем сценарий → запускаем и настраиваем бота</span>
                   </div>
                 </div>
+                <div className="flex justify-center">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-6 py-3 text-base hover-scale shadow-lg shadow-purple-500/20"
+                    onClick={() => window.open('https://t.me/cocozzAAA', '_blank')}
+                  >
+                    <Icon name="MessageCircle" size={18} className="mr-2" />
+                    Получить консультацию
+                  </Button>
+                </div>
               </div>
 
               <div>
@@ -87,9 +112,24 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                   <Icon name="Settings" size={20} className="mr-3 text-green-400" />
                   Настроим под ваши нужды
                 </h3>
-                <div className="flex items-center text-green-300">
+                <div className="flex items-center text-green-300 mb-6">
                   <span className="text-2xl mr-3">🚀</span>
                   <span>Настроим для Telegram, ВКонтакте или WhatsApp всего за 3 дня</span>
+                </div>
+                <div className="flex justify-center">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 text-base hover-scale shadow-lg shadow-orange-500/20 animate-pulse"
+                    onClick={() => {
+                      const contactSection = document.querySelector('[data-section="contact"]');
+                      if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    <Icon name="FileText" size={18} className="mr-2" />
+                    🔥 Оставить заявку
+                  </Button>
                 </div>
               </div>
 
