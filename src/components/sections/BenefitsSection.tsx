@@ -10,8 +10,8 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
   const benefits = [
     {
       icon: "Zap",
-      title: "Обрабатывает подключения мгновенно",
-      description: "Не теряет клиентов"
+      title: "Мгновенная обработка запросов",
+      description: "Отвечает без задержек"
     },
     {
       icon: "MessageSquare",
