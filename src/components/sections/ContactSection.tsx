@@ -19,6 +19,10 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
     const newErrors: Record<string, string> = {};
     if (!formData.name.trim()) {
       newErrors.name = 'Имя обязательно';
+    }
+    
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Телефон обязателен';
     } else {
       // Простая проверка: должен содержать минимум 10 цифр
       const phoneDigits = formData.phone.replace(/\D/g, '');
