@@ -29,41 +29,43 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Блог */}
+          {/* Услуги */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Блог</h3>
+            <h3 className="text-white font-semibold mb-4">Услуги</h3>
             <ul className="space-y-3">
               <li>
                 <Link 
-                  to="/blog" 
+                  to="/services" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Все статьи
+                  Все услуги
                 </Link>
               </li>
               <li>
                 <Link 
-                  to="/blog/chatbot-konversiya-prodazhi" 
+                  to="/cases" 
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Кейсы увеличения продаж
+                  Кейсы клиентов
                 </Link>
               </li>
               <li>
                 <Link 
-                  to="/blog/stoimost-razrabotki-chatbota-2025" 
+                  to="/blog" 
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Стоимость разработки
+                  Блог и статьи
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/blog/ii-assistent-dlya-nishi" 
+                <a 
+                  href="https://t.me/cocozzAAA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  ИИ для стоматологии
-                </Link>
+                  Консультация
+                </a>
               </li>
             </ul>
           </div>
@@ -100,13 +102,45 @@ const Footer = () => {
         {/* Разделитель */}
         <div className="border-t border-slate-700/50 my-8"></div>
 
-        {/* Нижняя часть футера */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-gray-400 text-sm">
-            © 2025 Bot24.pro. Все права защищены.
+        {/* Trust-факторы */}
+        <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 mb-6">
+          <div className="text-gray-400 text-sm text-center lg:text-left">
+            <div className="mb-2">
+              ИП Иванов И.И. | ОГРНИП 123456789012345
+            </div>
+            <div>
+              © 2025 Bot24.pro. Все права защищены.
+            </div>
           </div>
           
-          <div className="flex flex-wrap gap-6 text-sm">
+          <div className="flex items-center space-x-4">
+            <span className="text-gray-500 text-sm mr-2">Связаться с нами:</span>
+            <a 
+              href="https://t.me/cocozzAAA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+              aria-label="Telegram"
+            >
+              <Icon name="MessageCircle" size={18} />
+              <span className="text-sm font-medium">Telegram</span>
+            </a>
+            <a 
+              href="https://wa.me/79000000000" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-green-600/20 hover:bg-green-600/30 text-green-300 hover:text-green-200 px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105"
+              aria-label="WhatsApp"
+            >
+              <Icon name="MessageSquare" size={18} />
+              <span className="text-sm font-medium">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Нижняя часть футера */}
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0 pt-6 border-t border-slate-700/50">
+          <div className="flex flex-wrap gap-6 text-sm justify-center md:justify-start">
             <Link 
               to="/privacy" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -127,6 +161,10 @@ const Footer = () => {
             >
               Поддержка
             </a>
+          </div>
+          
+          <div className="text-gray-500 text-xs">
+            Разработка и поддержка: Bot24.pro
           </div>
         </div>
       </div>
