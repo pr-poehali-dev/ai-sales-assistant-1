@@ -160,6 +160,11 @@ const ContactSection = ({ isVisible, sectionRef }: ContactSectionProps) => {
               </p>
               
               <div className="space-y-4">
+                <div className="bg-blue-900/20 p-3 rounded-lg border border-blue-600/30 mb-4">
+                  <p className="text-sm text-blue-200 text-center">
+                    👆 Нажмите кнопку, чтобы пообщаться с нашим ИИ-ассистентом. Он соберет информацию о ваших задачах и передаст специалисту для подготовки персонального предложения.
+                  </p>
+                </div>
                 <Button 
                   size="lg" 
                   className="w-full lg:w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white hover-scale shadow-lg"

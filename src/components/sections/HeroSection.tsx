@@ -95,7 +95,10 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                     <span>Создаем сценарий → запускаем и настраиваем бота</span>
                   </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="text-center space-y-3">
+                  <p className="text-sm text-gray-400 max-w-md mx-auto leading-relaxed">
+                    Нажмите кнопку ниже, чтобы начать диалог с нашим ИИ-ассистентом. Он ответит на ваши вопросы и соберет базовую информацию, чтобы наш специалист связался с вами уже с готовым решением.
+                  </p>
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-6 py-3 text-base hover-scale shadow-lg shadow-purple-500/20"
@@ -142,6 +145,11 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
           </div>
           
           <div className="space-y-6 mb-16">
+            <div className="text-center space-y-4 mb-6">
+              <p className="text-base text-blue-200 max-w-2xl mx-auto leading-relaxed bg-blue-900/20 p-4 rounded-lg border border-blue-600/30">
+                💬 <strong>Начните диалог с нашим ИИ-ассистентом</strong> — он ответит на ваши вопросы и соберет базовую информацию, чтобы наш специалист связался с вами уже с готовым решением.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center">
               <Button 
                 size="lg" 
