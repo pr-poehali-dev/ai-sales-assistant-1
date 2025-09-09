@@ -321,7 +321,14 @@ const IIAssistentDlyaNishi = () => {
                   </h3>
                   <p className="text-gray-300 mb-6">
                     Настроим специализированного ИИ-ассистента под вашу стоматологическую клинику. 
-                    Увеличим количество записей и снизим нагрузку на администратора.
+                    Увеличим количество записей и снизим нагрузку на администратора. 
+                    Узнайте <Link 
+                      to="/blog/stoimost-razrabotki-chatbota-2025" 
+                      className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                    >сколько стоит разработка</Link> или <Link 
+                      to="/services" 
+                      className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
+                    >заказать внедрение ИИ-ассистента</Link> прямо сейчас.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a 

@@ -163,7 +163,14 @@ const ChatbotKonversiyaProdazhi = () => {
                   </h3>
                   <p className="text-gray-300 mb-6">
                     Настроим ИИ-ассистента под вашу нишу за 3 дня. 
-                    Бесплатный аудит воронки продаж в подарок.
+                    Бесплатный аудит воронки продаж в подарок. 
+                    Посмотрите больше <Link 
+                      to="/cases" 
+                      className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                    >реальных кейсов</Link> внедрения или <Link 
+                      to="/services" 
+                      className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
+                    >заказать внедрение ИИ-ассистента</Link>.
                   </p>
                   <a 
                     href="https://t.me/cocozzAAA"

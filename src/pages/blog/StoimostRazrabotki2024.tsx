@@ -156,6 +156,12 @@ const StoimostRazrabotki2024 = () => {
                           <li>• Работа 24/7</li>
                           <li>• Довольные клиенты</li>
                         </ul>
+                        <div className="mt-4 text-sm">
+                          <Link 
+                            to="/services" 
+                            className="text-purple-400 hover:text-purple-300 underline transition-colors"
+                          >Заказать внедрение ИИ-ассистента</Link> → от 50 000 ₽
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -225,6 +231,10 @@ const StoimostRazrabotki2024 = () => {
                       <li>• Использовать готовые шаблоны</li>
                       <li>• Поэтапное внедрение функций</li>
                       <li>• Тестировать на небольшой аудитории</li>
+                      <li>• Выбрать надежного подрядчика — <Link 
+                          to="/services" 
+                          className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
+                        >заказать внедрение ИИ-ассистента</Link></li>
                     </ul>
                   </div>
                   
@@ -245,7 +255,11 @@ const StoimostRazrabotki2024 = () => {
                   </h3>
                   <p className="text-gray-300 mb-6">
                     Каждый бизнес уникален. Получите персональный расчет стоимости 
-                    с учетом всех ваших требований. Консультация — бесплатно.
+                    с учетом всех ваших требований. Консультация — бесплатно. 
+                    Готовы начать? Вы можете <Link 
+                      to="/services" 
+                      className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                    >заказать внедрение ИИ-ассистента</Link> прямо сейчас.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a 
