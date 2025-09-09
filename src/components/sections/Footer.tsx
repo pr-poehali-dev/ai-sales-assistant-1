@@ -29,29 +29,41 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Услуги */}
+          {/* Блог */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Услуги</h3>
+            <h3 className="text-white font-semibold mb-4">Блог</h3>
             <ul className="space-y-3">
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  ИИ-ассистенты
-                </span>
+                <Link 
+                  to="/blog" 
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Все статьи
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  Чат-боты
-                </span>
+                <Link 
+                  to="/blog/chatbot-konversiya-prodazhi" 
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  Кейсы увеличения продаж
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  Автоматизация продаж
-                </span>
+                <Link 
+                  to="/blog/stoimost-razrabotki-chatbota-2024" 
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  Стоимость разработки
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                  Техподдержка
-                </span>
+                <Link 
+                  to="/blog/ii-assistent-dlya-nishi" 
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  ИИ для стоматологии
+                </Link>
               </li>
             </ul>
           </div>

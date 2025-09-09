@@ -9,6 +9,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Blog from "./pages/Blog";
+import ChatbotKonversiyaProdazhi from "./pages/blog/ChatbotKonversiyaProdazhi";
+import StoimostRazrabotki2024 from "./pages/blog/StoimostRazrabotki2024";
+import IIAssistentDlyaNishi from "./pages/blog/IIAssistentDlyaNishi";
 import Sitemap from "./components/Sitemap";
 
 const queryClient = new QueryClient();
@@ -24,6 +28,10 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/chatbot-konversiya-prodazhi" element={<ChatbotKonversiyaProdazhi />} />
+            <Route path="/blog/stoimost-razrabotki-chatbota-2024" element={<StoimostRazrabotki2024 />} />
+            <Route path="/blog/ii-assistent-dlya-nishi" element={<IIAssistentDlyaNishi />} />
             <Route path="/sitemap.xml" element={<Sitemap />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
