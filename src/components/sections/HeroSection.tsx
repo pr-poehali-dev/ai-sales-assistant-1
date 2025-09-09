@@ -49,13 +49,34 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             Продаёт, отвечает и консультирует вместо менеджеров
           </h2>
           
-          <h3 className="text-lg md:text-xl text-blue-300 mb-12 max-w-3xl mx-auto font-medium flex items-center justify-center gap-2">
+          <h3 className="text-lg md:text-xl text-blue-300 mb-8 max-w-3xl mx-auto font-medium flex items-center justify-center gap-2">
             <span>👉</span> Настроим за 3 дня. Без кода, без головной боли.
           </h3>
           
-          <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-            Он не уходит на больничный и не теряет клиентов. Отвечает на заявки, консультирует клиентов и продаёт — пока вы занимаетесь делом.
-          </p>
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 mb-12 max-w-4xl mx-auto border border-slate-700/50">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              <strong className="text-white">Bot24.pro</strong> — это сервис внедрения умных ИИ-ассистентов для бизнеса. Наш AI-бот отвечает на вопросы клиентов, консультирует по услугам, обрабатывает входящие заявки и превращает их в продажи по готовому сценарию.
+            </p>
+            <div className="mt-6 space-y-3">
+              <div className="flex items-center text-blue-300">
+                <span className="text-2xl mr-3">📋</span>
+                <span>Вы оставляете заявку → мы анализируем ваш бизнес</span>
+              </div>
+              <div className="flex items-center text-purple-300">
+                <span className="text-2xl mr-3">⚙️</span>
+                <span>Создаем сценарий → запускаем и настраиваем бота</span>
+              </div>
+              <div className="flex items-center text-green-300">
+                <span className="text-2xl mr-3">🚀</span>
+                <span>Настроим для Telegram, ВКонтакте или WhatsApp всего за 3 дня</span>
+              </div>
+            </div>
+            <div className="mt-6 p-4 bg-gradient-to-r from-emerald-900/30 to-teal-900/30 rounded-xl border border-emerald-600/20">
+              <p className="text-emerald-300 font-medium text-center">
+                💎 Получите бесплатный аудит вашей воронки продаж и шаблоны диалогов
+              </p>
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center mb-16">
             <Button 
