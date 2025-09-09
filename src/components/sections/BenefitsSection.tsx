@@ -62,7 +62,7 @@ const BenefitsSection = ({ isVisible, sectionRef }: BenefitsSectionProps) => {
         <div className="container mx-auto max-w-6xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto">
           <div className="text-left sm:text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Преимущества ИИ-ассистента
+              🚀 Преимущества ИИ-ассистента
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Ваш цифровой ассистент, который никогда не спит и не берет отпуск
