@@ -10,14 +10,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Icon name="Bot" size={32} className="text-blue-400" />
-              <a 
-                href="https://bot24.pro" 
-                className="text-2xl font-bold text-white hover:text-blue-400 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bot24.pro
-              </a>
+              <span className="text-2xl font-bold text-white">Bot24.pro</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               ИИ-ассистенты для автоматизации продаж и обработки заявок. 
@@ -116,14 +109,7 @@ const Footer = () => {
               ИП Иванов И.И. | ОГРНИП 123456789012345
             </div>
             <div>
-              © 2025 <a 
-                href="https://bot24.pro" 
-                className="text-gray-400 hover:text-white transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bot24.pro
-              </a>. Все права защищены.
+              © 2025 Bot24.pro. Все права защищены.
             </div>
           </div>
           
@@ -178,14 +164,7 @@ const Footer = () => {
           </div>
           
           <div className="text-gray-500 text-xs">
-            Разработка и поддержка: <a 
-              href="https://bot24.pro" 
-              className="text-gray-500 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Bot24.pro
-            </a>
+            Разработка и поддержка: Bot24.pro
           </div>
         </div>
       </div>
