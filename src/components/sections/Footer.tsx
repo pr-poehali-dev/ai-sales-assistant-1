@@ -82,7 +82,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
                   <Icon name="MessageCircle" size={16} className="mr-2" />
-                  Телеграм
+                  Телеграмм
                 </a>
               </li>
               <li>
@@ -123,10 +123,10 @@ const Footer = () => {
               aria-label="Telegram"
             >
               <Icon name="MessageCircle" size={18} />
-              <span className="text-sm font-medium">Телеграм</span>
+              <span className="text-sm font-medium">Телеграмм</span>
             </a>
             <a 
-              href="https://wa.me/79000000000" 
+              href="https://wa.me/79528901029" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-green-600/20 hover:bg-green-600/30 text-green-300 hover:text-green-200 px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105"
