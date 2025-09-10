@@ -52,7 +52,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
         <div className="space-y-3 mb-6">
           <Button 
             className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-sm shadow-lg"
-            onClick={() => window.open('https://t.me/pocovorimzzzz_bot', '_blank')}
+            onClick={() => window.open('https://t.me/pluchki_bot', '_blank')}
           >
             <Icon name="MessageCircle" size={16} className="mr-2" />
             🔥 Протестировать бота
