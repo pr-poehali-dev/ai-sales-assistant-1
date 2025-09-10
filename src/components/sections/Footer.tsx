@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://t.me/pluchki_bot" 
+                href="https://t.me/pocovorimzzzz_bot" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://t.me/pluchki_bot" 
+                  href="https://t.me/pocovorimzzzz_bot" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
@@ -76,7 +76,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="https://t.me/pluchki_bot" 
+                  href="https://t.me/pocovorimzzzz_bot" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
@@ -116,7 +116,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             <span className="text-gray-500 text-sm mr-2">Связаться с нами:</span>
             <a 
-              href="https://t.me/pluchki_bot" 
+              href="https://t.me/pocovorimzzzz_bot" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 hover:text-blue-200 px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105"
@@ -154,7 +154,7 @@ const Footer = () => {
               Пользовательское соглашение
             </Link>
             <a 
-              href="https://t.me/pluchki_bot" 
+              href="https://t.me/pocovorimzzzz_bot" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"

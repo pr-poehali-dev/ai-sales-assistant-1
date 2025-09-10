@@ -125,7 +125,7 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
                   <div className="bg-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                     <Icon name="ShoppingCart" size={32} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">@pluchki_bot</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">@pocovorimzzzz_bot</h3>
                   <p className="text-purple-300 mb-4">Бот для продаж</p>
                   <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-800">
                     <Icon name="Eye" size={16} className="mr-2" />
@@ -135,8 +135,8 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
               </Card>
             </DialogTrigger>
             <DemoModal 
-              title="Бот для продаж @pluchki_bot"
-              botName="pluchki_bot"
+              title="Бот для продаж @pocovorimzzzz_bot"
+              botName="pocovorimzzzz_bot"
               description="Продаёт услуги, обрабатывает заявки и закрывает сделки"
               features={[
                 "Проводит полную консультацию",
