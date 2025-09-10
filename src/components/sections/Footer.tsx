@@ -82,7 +82,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
                   <Icon name="MessageCircle" size={16} className="mr-2" />
-                  Telegram
+                  Телеграм
                 </a>
               </li>
               <li>
@@ -123,7 +123,7 @@ const Footer = () => {
               aria-label="Telegram"
             >
               <Icon name="MessageCircle" size={18} />
-              <span className="text-sm font-medium">Telegram</span>
+              <span className="text-sm font-medium">Телеграм</span>
             </a>
             <a 
               href="https://wa.me/79000000000" 
