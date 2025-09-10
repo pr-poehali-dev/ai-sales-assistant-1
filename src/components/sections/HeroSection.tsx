@@ -16,8 +16,8 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
       }`}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
-      <div className="container mx-auto max-w-6xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto relative z-10">
-        <div className="text-left sm:text-center animate-fade-in">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 relative z-10">
+        <div className="text-center animate-fade-in">
           <Button 
             size="lg" 
             className="text-white px-8 py-4 text-lg hover-scale relative group mb-6"
@@ -41,19 +41,19 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             </div>
           </Button>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent px-2">
             ИИ-продавец 24/7 — заявки на автопилоте
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto">
+          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto px-2">
             Продаёт, отвечает и консультирует вместо менеджеров
           </h2>
           
-          <h3 className="text-lg md:text-xl text-blue-300 mb-8 max-w-3xl mx-auto font-medium flex items-center justify-center gap-2">
+          <h3 className="text-base sm:text-lg md:text-xl text-blue-300 mb-8 max-w-3xl mx-auto font-medium flex items-center justify-center gap-2 px-2">
             <span>👉</span> Настроим за 3 дня. Без кода, без головной боли.
           </h3>
           
-          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 mb-12 max-w-4xl mx-auto border border-slate-700/50">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 mb-12 max-w-4xl mx-auto border border-slate-700/50 mx-2 sm:mx-auto">
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
@@ -150,7 +150,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
                 💬 <strong>Начните диалог с нашим ИИ-ассистентом</strong> — он ответит на ваши вопросы и соберет базовую информацию, чтобы наш специалист связался с вами уже с готовым решением.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center px-2">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover-scale shadow-lg shadow-blue-500/25"
