@@ -11,12 +11,12 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
     <section 
       ref={sectionRef}
       data-section="hero"
-      className={`relative overflow-hidden py-12 sm:py-20 px-2 sm:px-4 transition-all duration-1000 ${
+      className={`relative py-12 sm:py-20 px-1 sm:px-4 transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
-      <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 relative z-10">
+      <div className="w-full max-w-4xl mx-auto px-2 sm:px-4 md:px-6 relative z-10">
         <div className="text-center animate-fade-in">
           <Button 
             size="lg" 
@@ -53,14 +53,14 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             <span>👉</span> Настроим за 3 дня. Без кода, без головной боли.
           </h3>
           
-          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-3 sm:p-6 md:p-8 mb-12 w-full max-w-3xl mx-auto border border-slate-700/50">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-3 sm:p-6 md:p-8 mb-12 w-full max-w-3xl mx-auto border border-slate-700/50 overflow-hidden">
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
+                <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center flex-wrap">
                   <Icon name="Bot" size={24} className="mr-3 text-blue-400" />
                   Что такое Bot24.pro?
                 </h2>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-6">
                   Это сервис внедрения умных ИИ-ассистентов для бизнеса. Наш AI-бот отвечает на вопросы клиентов, консультирует по услугам, обрабатывает входящие заявки и превращает их в продажи по готовому сценарию.
                 </p>
                 <div className="flex justify-center">
@@ -81,7 +81,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 flex items-center flex-wrap">
                   <Icon name="ArrowRight" size={20} className="mr-3 text-purple-400" />
                   Как происходит работа?
                 </h3>
@@ -111,7 +111,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 flex items-center flex-wrap">
                   <Icon name="Settings" size={20} className="mr-3 text-green-400" />
                   Настроим под ваши нужды
                 </h3>
