@@ -8,6 +8,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
   return (
+    <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
     <section 
       ref={sectionRef}
       data-section="hero"
@@ -16,36 +17,34 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
       }`}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm" />
-      <div className="w-full max-w-4xl mx-auto px-2 sm:px-4 md:px-6 relative z-10">
+      <div className="w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto px-2 sm:px-4 md:px-6 relative z-10">
         <div className="text-center animate-fade-in">
           <Button 
             size="lg" 
-            className="text-white px-8 py-4 text-lg hover-scale relative group mb-6"
+            className="text-white px-3 sm:px-6 py-3 sm:py-4 text-sm sm:text-base hover-scale relative group mb-6 max-w-full"
             style={{
               background: 'linear-gradient(90deg, #10b981, #14b8a6)',
-              padding: '16px 32px', 
-              fontSize: '18px',
               boxShadow: '0 10px 25px rgba(16, 185, 129, 0.2)',
               border: 'none'
             }}
             onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #065f46, #047857)'}
             onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #10b981, #14b8a6)'}
           >
-            <span className="flex items-center">
-              <Icon name="Bot" size={18} className="mr-2" />
-              ИИ-технологии для бизнеса
+            <span className="flex items-center justify-center">
+              <Icon name="Bot" size={16} className="mr-1 sm:mr-2" />
+              <span className="truncate">ИИ-технологии для бизнеса</span>
             </span>
-            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-              Канал с полезными материалами
+            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-2 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap max-w-48 text-center hidden sm:block">
+              Канал с материалами
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
             </div>
           </Button>
           
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight break-words">
             ИИ-продавец 24/7 — заявки на автопилоте
           </h1>
           
-          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 max-w-xs sm:max-w-md md:max-w-2xl mx-auto break-words">
             Продаёт, отвечает и консультирует вместо менеджеров
           </h2>
           
@@ -53,7 +52,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
             <span>👉</span> Настроим за 3 дня. Без кода, без головной боли.
           </h3>
           
-          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-3 sm:p-6 md:p-8 mb-12 w-full max-w-3xl mx-auto border border-slate-700/50 overflow-hidden">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-3 sm:p-6 md:p-8 mb-12 w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto border border-slate-700/50">
             <div className="space-y-8">
               <div>
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 flex items-center flex-wrap">
@@ -190,6 +189,7 @@ const HeroSection = ({ isVisible, sectionRef }: HeroSectionProps) => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
