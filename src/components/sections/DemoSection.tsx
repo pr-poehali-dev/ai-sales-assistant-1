@@ -78,7 +78,7 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="container mx-auto max-w-4xl px-2 sm:px-4">
+      <div className="container mx-auto max-w-4xl px-2 sm:px-4 ml-0 sm:ml-auto mr-auto">
         <h2 className="text-4xl font-bold text-left sm:text-center text-white mb-16">
           Примеры чат-ботов
         </h2>
@@ -93,7 +93,7 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
                   <div className="bg-blue-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                     <Icon name="Bot" size={32} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">@pluchki_bot</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">@demo_warm_bot</h3>
                   <p className="text-blue-300 mb-4">Бот для прогрева аудитории</p>
                   <Button variant="outline" className="border-blue-500 text-blue-300 hover:bg-blue-800">
                     <Icon name="Eye" size={16} className="mr-2" />
@@ -103,8 +103,8 @@ const DemoSection = ({ isVisible, sectionRef }: DemoSectionProps) => {
               </Card>
             </DialogTrigger>
             <DemoModal 
-              title="Бот для прогрева @pluchki_bot"
-              botName="pluchki_bot"
+              title="Бот для прогрева @demo_warm_bot"
+              botName="demo_warm_bot"
               description="Прогревает подписчиков, рассказывает о пользе услуг и подготавливает к покупке"
               features={[
                 "Отвечает на частые вопросы об услугах",
